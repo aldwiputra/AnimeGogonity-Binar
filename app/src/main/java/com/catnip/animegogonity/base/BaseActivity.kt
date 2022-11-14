@@ -33,7 +33,8 @@ open class BaseActivity<B : ViewBinding>(
 
 }
 
-abstract class BaseViewModelActivity<B : ViewBinding, VM : ViewModel>(bindingFactory: (LayoutInflater) -> B) : BaseActivity<B>(bindingFactory){
+abstract class BaseViewModelActivity<B : ViewBinding, VM : ViewModel>(bindingFactory: (LayoutInflater) -> B) :
+    BaseActivity<B>(bindingFactory) {
 
-    abstract val viewModel : VM
+    abstract val viewModel: VM
 }
